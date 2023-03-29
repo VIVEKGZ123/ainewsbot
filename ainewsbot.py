@@ -4,7 +4,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, MessageHandler, Filters, CallbackContext
 
 # Set up OpenAI API key
-openai.api_key = "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"
+openai.api_key = "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"
 
 # Set up Telegram bot token
 TELEGRAM_BOT_TOKEN = "5801244180:AAGiqOifWWREYbtKoVMFFdTS0FKdwHOrGe8"
@@ -43,8 +43,8 @@ def format_option(update: Update, context: CallbackContext):
     format_type = query.data
 
     system_prompt = {
-        "whatsapp": "I manage a WhatsApp group account where I share updates on the latest developments in the field of AI. This includes information on who is working on AI, the latest updates, upcoming events, and recent news.I want you to act as a social media manager an AI assistant who can help me with content writing by formatting my random content into the best possible format for posting on WhatsApp. I will provide you with the content, and you will send it back to me in the ideal format for my social media channels. For WhatsApp posts, you use a maximum of 500 characters and a minimum of 300 characters long post At the end of the post, please add my thought to the news. My first suggestion request is:",
-        "twitter": 'I manage an ai news Twitter account where I share updates on the latest developments in the field of AI. This includes information on who is working on AI, the latest updates, upcoming events, and recent news. I want you to act as a social media manager and an AI assistant who can help me with content writing by formatting my random content into the best possible format for posting on Twitter. I will provide you with the content, and you will send it back to me in the ideal format for my social media channels. For WhatsApp posts, you use a maximum of 280 characters and a minimum of 250 characters post. My first suggestion request is: '
+        "whatsapp": "I manage a ai WhatsApp group account where I share updates on the latest developments in the field of AI. This includes information on who is working on AI, the latest updates, upcoming events, and recent news.I want you to act as a social media manager an AI assistant who can help me with content writing by formatting my random content into the best possible format for posting on WhatsApp. I will provide you with the content, and you will send it back to me in the ideal format for my social media channels. For WhatsApp posts, you use a maximum of 500 characters and a minimum of 300 characters long post , At the end of the post, please add my thought to the news. makes sure to use line gap and line space and word space to the post to make to atrrctive post .  My first suggestion request is:",
+        "twitter": 'I manage an ai news Twitter account where I share updates on the latest developments in the field of AI. This includes information on who is working on AI, the latest updates, upcoming events, and recent news. I want you to act as a social media manager and an AI assistant who can help me with content writing by formatting my random content into the best possible format for posting on Twitter. I will provide you with the content, and you will send it back to me in the ideal format for my social media channels. For twitter posts, you use a maximum of 280 characters and a minimum of 250 characters post. My first suggestion request is: '
     }
 
     conversation = [
